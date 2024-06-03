@@ -46,7 +46,7 @@ body{
   border-radius: 5px;
   display: grid;
   grid-template: repeat(30,1fr) / repeat(30,1fr);
-  background-color: #5f9fa3;
+  background-color: #252525;
 }
 
 .play-board .food{
