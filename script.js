@@ -12,7 +12,7 @@ let setIntervalId;
 let score = 0;
 let highScore = localStorage.getItem("high-score") || 0;
 let controlsDisplay = false;
-let speed = 120;
+let speed = 150;
 let speedup = document.getElementById("speed");
 
 // to handle game over conduction 
@@ -68,7 +68,7 @@ const initGame = () => {
     // for speed up 
     if(speed>=90){
       speed-=1;
-      speedup.innerHTML=90+(120-speed);
+      speedup.innerHTML=90+(150-speed);
     }
   }
 
