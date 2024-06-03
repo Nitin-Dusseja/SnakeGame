@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+body{
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-evenly; */
+  /* flex-direction: column; */
+  max-height: 100vh;
+  background: seashell;
+}
+
+.wrapper{
+  width: 65vmin;
+  height: 70vmin;
+  display: flex;
+  flex-direction: column;
+  background: #333333;
+  border-radius: 5px;
+  margin: 5% auto;
+  /* flex: .6; */
+}
+
+.game-details {
+  color: #fcfcfc;
+  background-color: #252525;
+  /* margin: 5px; */
+  border-radius: 3px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 20px 27px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.play-board{
+  width: 100%;
+  height: 100%;
+  /* margin: 5px; */
+  border-radius: 5px;
+  display: grid;
+  grid-template: repeat(30,1fr) / repeat(30,1fr);
+  background-color: #333333;
+}
+
+.play-board .food{
+  background-color: crimson;
+  /* border-radius: 50%; */
+}
+.play-board .head{
+  background-color: rgb(18, 167, 82);
+  border-top: 1px solid green;
+  border-right: 1px solid rgb(6, 78, 16);
+}
+
+
+.controls{
+  display: none;
+  /* position: absolute; */
+}
+
+.controls img{
+  height: 80px;
+}
+
+.left-right{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 230px;
+}
+
+.up,.down{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings{
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+
+.settings img{
+  height: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper{
+    width: 95vmin;
+    height: 95vmin;
+    display: flex;
+    flex-direction: column;
+    background: #333333;
+    border-radius: 5px;
+    margin: 20% auto;
+  }
+  .controls{
+    display: block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,0%);
+  }
+  .settings img{
+    height: 30px;
+  }
+  
+}
+
+@media only screen and (max-width: 375px) {
+  .controls img{
+    height: 60px;
+  }
+  .controls{
+    display: block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,0%);
+  }
+  .left-right{
+  width: 190px;
+  }
+  .settings img{
+    height: 30px;
+  }
+  
+}
+
+@media only screen and (max-width: 1280px) {
+  .controls img{
+    height: 60px;
+  }
+  .controls{
+    display: block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,0%);
+  }
+  .left-right{
+  width: 290px;
+  }
+  .settings img{
+    height: 80px;
+  }
+  
+  .controls img{
+    height: 100px;
+  }
+
+}
